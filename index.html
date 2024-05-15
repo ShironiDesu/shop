@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header hide">
+        <section class="nav-section"><nav class="nav">  <button class="cart-btn">Cart</button>
+        
+          <form action="" id="searchForm">
+            <input
+              type="search"
+              placeholder="Product name"
+              class="search-input"
+            />
+          </form>  <button class="logout-btn">Log out</button></nav></section>
+      </header>
+      <main class="container">
+        <section class="authorization">
+          <div class="signin-block">
+            <h2>Войти в аккаунт</h2>
+            <form action="" class="signin-form">
+              <input type="email" placeholder="email" name="email" />
+              <input type="password" placeholder="password" name="password" />
+              <button class="btn signin-btn" type="submit">Sign in</button>
+            </form>
+            <a class="toggle-form">Нет аккаунта? Создайте его</a>
+          </div>
+          <div class="signup-block hide">
+            <h2>Регистрация</h2>
+            <form action="" class="signup-form">
+              <input type="text" placeholder="username" name="username" />
+              <input type="email" placeholder="email" name="email" />
+              <input type="password" placeholder="password" name="password" />
+              <button class="btn signup-btn">Sign up</button>
+            </form>
+            <a href="" class="toggle-form">Уже есть аккаунт?</a>
+          </div>
+        </section>
+        <section class="aside-section hide"> 
+          <aside class="sidebar">
+          <div class="side">Категории:</div>
+          <div class="subside hide">Подкатегории:</div>
+        </aside></section>
+        <section class="products-section hide">
+          <div class="products-container">
+            <div class="products-list">
+              <div class="products"></div>
+              <div class="pagination-container"></div>
+            </div>
+          </div>
+        </section>
+        <section class="cart-section hide">
+          <div class="shopping-cart">
+          <div class="title">
+            Shopping Bag $<span class="total"></span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
